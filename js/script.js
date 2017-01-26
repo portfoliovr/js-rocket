@@ -2,6 +2,17 @@ var sayMyName = function (name) {
 	alert('My Name is: '+name);
 }
 
+// this is function does this.
+var doCoolstuff = function () {
+	var currentClassName = document.getElementById('cool').className;
+	
+	if (currentClassName =='cool') {
+		document.getElementById('cool').className = 'cool red';
+	} else {
+		document.getElementById('cool').className = 'cool';
+	}
+}
+
 
 var car = {
 		make: 'VW',
